@@ -55,6 +55,8 @@ a{
 
 a:hover {
   color: #FF9F1C;
+  font-size: 25px;
+  transition: 0.3s;
 }
 
 .sm_links {

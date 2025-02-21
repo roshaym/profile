@@ -116,18 +116,19 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  text-align: left;
+  text-align: right; /* Align text to the right */
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
 }
 
-.card-product {
-  display: block;
+.card-product a {
   text-decoration: none;
   color: inherit;
+  display: flex;
   width: 100%;
   height: 100%;
+  align-items: center;
 }
 
 .card-product:hover {
@@ -140,6 +141,7 @@ a:hover {
   height: 100%;
   width: 120px;
   object-fit: cover;
+  order: 2; /* Moves image to the right */
 }
 
 .card-product-infos {

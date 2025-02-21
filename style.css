@@ -140,14 +140,9 @@ a:hover {
   height: 100%;
   width: 120px;
   object-fit: cover;
-  order: 1;  /* Moves image to the left */
 }
 
 .card-product-infos {
   flex: 1;
   padding: 16px;
-}
-
-.card-product:hover .card-product-infos {
-  font-size: 11px;
 }

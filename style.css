@@ -112,12 +112,12 @@ a:hover {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content: space-between;  /* Ensures image and text are aligned in the same row */
+  justify-content: space-between;  /* Keeps text and image on the same row */
   align-items: center;
   padding: 16px;
   text-align: left;
   color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease; /* Added font size transition */
   border-radius: 8px;
 }
 
@@ -137,12 +137,17 @@ a:hover {
 }
 
 .card-product img {
-  height: 100px;  /* Set fixed height for consistent size */
-  width: 120px;  /* Adjust the width */
+  height: 100px;
+  width: 120px;
   object-fit: cover;
+  order: 1;  /* Moves image to the left */
 }
 
 .card-product-infos {
   flex: 1;
   padding: 16px;
+}
+
+.card-product:hover .card-product-infos {
+  font-size: 14px; /* Reduce font size on hover */
 }

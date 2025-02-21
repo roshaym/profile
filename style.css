@@ -137,7 +137,7 @@ a:hover {
 }
 
 .card-product img {
-  height: 100px;
+  height: 100%;
   width: 120px;
   object-fit: cover;
   order: 1;  /* Moves image to the left */
@@ -149,5 +149,5 @@ a:hover {
 }
 
 .card-product:hover .card-product-infos {
-  font-size: 14px; /* Reduce font size on hover */
+  font-size: 11px;
 }

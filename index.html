@@ -1,76 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Roshay | Developer Portfolio</title>
+
+    <!-- Tailwind Dark Mode Config -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Matt Roshay | Full-Stack Developer Portfolio" />
+    <meta name="description" content="Portfolio of Matt Roshay – Ruby on Rails developer, former BD leader, and builder of intuitive, performant web applications." />
+    <meta name="keywords" content="Matt Roshay, full-stack developer, Ruby on Rails, web developer portfolio, Tailwind CSS" />
+    <meta name="author" content="Matt Roshay" />
+
+    <!-- Social Preview -->
+    <meta property="og:title" content="Matt Roshay | Full-Stack Developer" />
+    <meta property="og:description" content="Web developer with a business edge. View my portfolio." />
+    <meta property="og:image" content="preview.png" />
+    <meta property="og:url" content="https://roshaym.github.io/profile/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      section {
+        scroll-margin-top: 100px;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 5px;
+      }
+    </style>
   </head>
-  <body>
-  <div class="container">
-    <div class=card>
-      <H1>
-          Hello, I'm Matt: an aspiring developer and tech geek
-      </H1>
-      <img id="profile_pic" src="images/download.png" width="300px">
-      <P>
-        Having completed my training as a software developer, I am now eager to apply my skills and take on new and exciting challenges in the tech world. I’m actively looking for opportunities to contribute, learn, and grow in this dynamic field.
-      </P>
-      <a href="https://www.linkedin.com/in/mattroshay/" target="-blank">View my profile</a>
-    </div>
-    <div class="card">
-      <H2>
-        Projects
-      </H2>
-      <a href="https://www.matchmeal.eu/" target="-blank">
-        <div class="card-product">
-          <img src="images/icon-512x512.png" />
-          <div class="card-product-infos">
-            <h2>MatchMeal - Make the most of what's in your kitchen</h2>
-            <p>MatchMeal is a smart recipe app that matches ingredients in your fridge with recipes you can cook immediately.</p>
+
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 flex flex-col justify-center items-center text-center px-4 bg-white dark:bg-gray-900" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Matt Roshay</h1>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6">Full-Stack Web Developer | Ex-BD Leader | Ruby on Rails Specialist</p>
+      <a href="#projects" class="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 transition">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 max-w-3xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        I'm a full-stack developer with 15+ years of experience in business development and relationship management across global law firms. After completing Le Wagon’s Web Development Bootcamp, I now build intuitive, performant web applications using Ruby on Rails, Turbo/Hotwire, and Tailwind CSS.
+      </p>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        Previously led cross-functional initiatives across EMEA, managed key financial sector accounts, and pitched over 150 proposals per year. I bring that strategic, client-first mindset to every product I build.
+      </p>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        🔧 <strong>Tech Stack:</strong> Ruby on Rails, PostgreSQL, JavaScript, Hotwire, Turbo, Devise, Tailwind, Cloudinary
+      </p>
+      <p class="text-gray-700 dark:text-gray-300">
+        📚 <strong>Currently Learning:</strong> Advanced CSS & SASS (Udemy), Progressive Web Apps, Frontend Animation
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50 dark:bg-gray-800 px-6">
+      <h2 class="text-3xl font-semibold text-center mb-12" data-aos="fade-up">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+        <!-- MatchMeal -->
+        <div class="bg-white dark:bg-gray-900 shadow-md rounded-xl overflow-hidden card" data-aos="zoom-in">
+          <img src="https://via.placeholder.com/600x300" alt="MatchMeal Screenshot" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">MatchMeal</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">
+              An AI-powered recipe recommendation web app that helps users cook based on what’s already in their fridge or pantry.
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+              Rails · OpenAI API · PostgreSQL · Tailwind · Turbo
+            </p>
+            <a href="#" class="text-black dark:text-white font-medium hover:underline">View Live</a> ·
+            <a href="#" class="text-black dark:text-white font-medium hover:underline">GitHub</a>
           </div>
         </div>
-      </a>
-      <P>
-        More to come imminently.
-      </P>
-    </div>
-    <div class=card>
-      <H2>
-        Hobbies
-      </H2>
-      <P>
-        My hobbies include:
-        <Li><strong>Diving</strong></Li>
-        <Li><strong>Ultimate Frisbee</strong></Li>
-        <Li><Strong>Fitness</Strong> (running, gym etc.)</Li>
-        <Li><Strong>Gaming</Strong></Li>
-      </P>
-    </div>
-    <div class="card">
-      <H2>
-        Passions
-      </H2>
-      <P>
-        I'm passionate about <em>everything</em> 😁 tech related, but lately have had a <strong>strong desire </strong> to learn to code and develop a few projects.
-      </P>
-    </div>
 
-    <div class="card")>
-      <H2>
-        Follow me
-      </H2>
-      <Ul class="list-inline">
-        <Li><a href="https://github.com/roshaym" target="-blank"><i class="fa-brands fa-square-github fa-2x"></i></a></Li>
-        <Li><a href="https://www.linkedin.com/in/mattroshay/" target="-blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></Li>
-      </Ul>
-    </div>
-  </div>
+        <!-- b-itconsulting -->
+        <div class="bg-white dark:bg-gray-900 shadow-md rounded-xl overflow-hidden card" data-aos="zoom-in" data-aos-delay="150">
+          <img src="https://via.placeholder.com/600x300" alt="b-itconsulting Screenshot" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">b-itconsulting</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">
+              Portfolio site for an IT infrastructure expert. Features include an auto-scrolling project carousel, testimonials, and CV timeline.
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+              Rails · SCSS · Bootstrap · Cloudinary
+            </p>
+            <a href="#" class="text-black dark:text-white font-medium hover:underline">View Live</a> ·
+            <a href="#" class="text-black dark:text-white font-medium hover:underline">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-4">Get In Touch</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-6">Open to freelance projects and full-time opportunities.</p>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        📬 <a href="mailto:matt.roshay@gmail.com" class="underline text-black dark:text-white">matt.roshay@gmail.com</a>
+      </p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="https://github.com/roshaym" target="_blank" class="text-black dark:text-white hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/mattroshay/" target="_blank" class="text-black dark:text-white hover:underline">LinkedIn</a>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <button id="toggleDark" class="mt-10 px-4 py-2 rounded bg-gray-800 text-white dark:bg-gray-200 dark:text-black hover:opacity-90 transition">
+        Toggle Dark Mode
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 dark:text-gray-400 text-sm py-6 border-t border-gray-200 dark:border-gray-700 mt-12">
+      © 2025 Matt Roshay — Built with Tailwind CSS
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <script>
+      const toggle = document.getElementById('toggleDark');
+      const root = document.documentElement;
+
+      // Load saved theme on page load
+      if (localStorage.theme === 'dark') {
+        root.classList.add('dark');
+      }
+
+      toggle.addEventListener('click', () => {
+        root.classList.toggle('dark');
+        localStorage.theme = root.classList.contains('dark') ? 'dark' : 'light';
+      });
+    </script>
+
   </body>
 </html>

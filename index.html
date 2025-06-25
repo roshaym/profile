@@ -1,166 +1,94 @@
+
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matt Roshay | Developer Portfolio</title>
-
-    <!-- Tailwind Dark Mode Config -->
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-      };
-    </script>
+    <title>Matt Roshay | Full-Stack Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png" />
-
-    <!-- SEO Meta Tags -->
-    <meta name="title" content="Matt Roshay | Full-Stack Developer Portfolio" />
-    <meta name="description" content="Portfolio of Matt Roshay – Ruby on Rails developer, former BD leader, and builder of intuitive, performant web applications." />
-    <meta name="keywords" content="Matt Roshay, full-stack developer, Ruby on Rails, web developer portfolio, Tailwind CSS" />
-    <meta name="author" content="Matt Roshay" />
-
-    <!-- Social Preview -->
-    <meta property="og:title" content="Matt Roshay | Full-Stack Developer" />
-    <meta property="og:description" content="Web developer with a business edge. View my portfolio." />
-    <meta property="og:image" content="preview.png" />
-    <meta property="og:url" content="https://roshaym.github.io/profile/" />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- AOS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-      section {
-        scroll-margin-top: 100px;
-      }
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #ccc;
-        border-radius: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
+  <body class="bg-white text-gray-900">
 
-  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <header class="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 py-24 max-w-6xl mx-auto">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl font-bold mb-4">Matt Roshay</h1>
+        <p class="text-lg mb-6">Full-Stack Developer with 15+ years in business development and client strategy.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#projects" class="px-6 py-2 bg-black text-white rounded hover:bg-gray-800">View Projects</a>
+          <a href="Matt Roshay - Full-Stack General CV.pdf" download class="px-6 py-2 border border-gray-800 rounded hover:bg-gray-100">Download Resume</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="IMG_1489.jpeg" alt="Matt Roshay" class="w-48 h-48 object-cover rounded-full grayscale-img shadow-md" />
+      </div>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 flex flex-col justify-center items-center text-center px-4 bg-white dark:bg-gray-900" data-aos="fade-up">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Matt Roshay</h1>
-      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-6">Full-Stack Web Developer | Ex-BD Leader | Ruby on Rails Specialist</p>
-      <a href="#projects" class="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 transition">View My Work</a>
+    <section id="about" class="px-6 py-16 max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <p class="text-gray-700 mb-4">
+        I’m a full-stack developer with a strong foundation in Ruby on Rails, React.js, and modern web technologies,
+        following a 15+ year career in business development and client relationship management.
+      </p>
+      <p class="text-gray-700 mb-4">
+        I build responsive, user-focused applications like MatchMeal (AI recipe tool) and a CMS-style portfolio/blog
+        platform. I'm experienced in Agile workflows, API integrations, and tools like Cloudinary and PostgreSQL.
+      </p>
+      <p class="text-gray-700">
+        Passionate about creating inclusive digital experiences and solving real-world problems through technology.
+      </p>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 px-6 max-w-3xl mx-auto text-center" data-aos="fade-up">
-      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">
-        I'm a full-stack developer with 15+ years of experience in business development and relationship management across global law firms. After completing Le Wagon’s Web Development Bootcamp, I now build intuitive, performant web applications using Ruby on Rails, Turbo/Hotwire, and Tailwind CSS.
-      </p>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">
-        Previously led cross-functional initiatives across EMEA, managed key financial sector accounts, and pitched over 150 proposals per year. I bring that strategic, client-first mindset to every product I build.
-      </p>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">
-        🔧 <strong>Tech Stack:</strong> Ruby on Rails, PostgreSQL, JavaScript, Hotwire, Turbo, Devise, Tailwind, Cloudinary
-      </p>
-      <p class="text-gray-700 dark:text-gray-300">
-        📚 <strong>Currently Learning:</strong> Advanced CSS & SASS (Udemy), Progressive Web Apps, Frontend Animation
-      </p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-50 dark:bg-gray-800 px-6">
-      <h2 class="text-3xl font-semibold text-center mb-12" data-aos="fade-up">Projects</h2>
+    <section id="projects" class="px-6 py-16 bg-gray-50">
+      <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
       <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
-        <!-- MatchMeal -->
-        <div class="bg-white dark:bg-gray-900 shadow-md rounded-xl overflow-hidden card" data-aos="zoom-in">
-          <img src="https://via.placeholder.com/600x300" alt="MatchMeal Screenshot" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">MatchMeal</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-2">
-              An AI-powered recipe recommendation web app that helps users cook based on what’s already in their fridge or pantry.
-            </p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-              Rails · OpenAI API · PostgreSQL · Tailwind · Turbo
-            </p>
-            <a href="#" class="text-black dark:text-white font-medium hover:underline">View Live</a> ·
-            <a href="#" class="text-black dark:text-white font-medium hover:underline">GitHub</a>
-          </div>
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">MatchMeal</h3>
+          <p class="text-gray-700 mb-2">
+            A web/mobile app that helps users find recipes based on what's already in their kitchen.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">Rails · OpenAI · PWA · PostgreSQL</p>
+          <a href="https://www.matchmeal.eu" class="text-black hover:underline">Live</a> ·
+          <a href="https://github.com/roshaym/matchmeal" class="text-black hover:underline">GitHub</a>
         </div>
 
-        <!-- b-itconsulting -->
-        <div class="bg-white dark:bg-gray-900 shadow-md rounded-xl overflow-hidden card" data-aos="zoom-in" data-aos-delay="150">
-          <img src="https://via.placeholder.com/600x300" alt="b-itconsulting Screenshot" class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">b-itconsulting</h3>
-            <p class="text-gray-600 dark:text-gray-300 mb-2">
-              Portfolio site for an IT infrastructure expert. Features include an auto-scrolling project carousel, testimonials, and CV timeline.
-            </p>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-              Rails · SCSS · Bootstrap · Cloudinary
-            </p>
-            <a href="#" class="text-black dark:text-white font-medium hover:underline">View Live</a> ·
-            <a href="#" class="text-black dark:text-white font-medium hover:underline">GitHub</a>
-          </div>
+        <div class="bg-white shadow rounded-xl p-6">
+          <h3 class="text-xl font-semibold mb-2">b-itconsulting</h3>
+          <p class="text-gray-700 mb-2">
+            Custom-built portfolio and CMS platform for a senior IT infrastructure consultant.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">Rails · Cloudinary · SCSS · Blog Editor</p>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-6 md:col-span-2">
+          <h3 class="text-xl font-semibold mb-2">FlatRent</h3>
+          <p class="text-gray-700 mb-2">
+            An Airbnb-style clone built with a team using Rails and JavaScript.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">Rails · JS · PostgreSQL · Devise</p>
+          <a href="https://airbnb-roshaym-5f0f5ed33d88.herokuapp.com" class="text-black hover:underline">Live</a>
         </div>
 
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-6 text-center" data-aos="fade-up">
+    <section id="contact" class="px-6 py-16 text-center">
       <h2 class="text-3xl font-semibold mb-4">Get In Touch</h2>
-      <p class="text-gray-700 dark:text-gray-300 mb-6">Open to freelance projects and full-time opportunities.</p>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">
-        📬 <a href="mailto:matt.roshay@gmail.com" class="underline text-black dark:text-white">matt.roshay@gmail.com</a>
+      <p class="text-gray-700 mb-6">Available for freelance and full-time opportunities.</p>
+      <p class="text-gray-700 mb-4">
+        📬 <a href="mailto:roshaym@gmail.com" class="underline">roshaym@gmail.com</a>
       </p>
       <div class="flex justify-center gap-6 mt-4">
-        <a href="https://github.com/roshaym" target="_blank" class="text-black dark:text-white hover:underline">GitHub</a>
-        <a href="https://www.linkedin.com/in/mattroshay/" target="_blank" class="text-black dark:text-white hover:underline">LinkedIn</a>
+        <a href="https://github.com/roshaym" class="text-black hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/mattroshay/" class="text-black hover:underline">LinkedIn</a>
       </div>
-
-      <!-- Dark Mode Toggle -->
-      <button id="toggleDark" class="mt-10 px-4 py-2 rounded bg-gray-800 text-white dark:bg-gray-200 dark:text-black hover:opacity-90 transition">
-        Toggle Dark Mode
-      </button>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center text-gray-500 dark:text-gray-400 text-sm py-6 border-t border-gray-200 dark:border-gray-700 mt-12">
-      © 2025 Matt Roshay — Built with Tailwind CSS
+    <footer class="text-center text-gray-500 text-sm py-6 border-t mt-12">
+      © 2025 Matt Roshay — Built with HTML & Tailwind CSS
     </footer>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-
-    <script>
-      const toggle = document.getElementById('toggleDark');
-      const root = document.documentElement;
-
-      // Load saved theme on page load
-      if (localStorage.theme === 'dark') {
-        root.classList.add('dark');
-      }
-
-      toggle.addEventListener('click', () => {
-        root.classList.toggle('dark');
-        localStorage.theme = root.classList.contains('dark') ? 'dark' : 'light';
-      });
-    </script>
 
   </body>
 </html>

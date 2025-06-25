@@ -1,94 +1,101 @@
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matt Roshay | Full-Stack Developer Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-white text-gray-900">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matt Roshay | Full-Stack Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900">
 
-    <header class="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 py-24 max-w-6xl mx-auto">
-      <div class="md:w-1/2 mb-8 md:mb-0">
-        <h1 class="text-4xl font-bold mb-4">Matt Roshay</h1>
-        <p class="text-lg mb-6">Full-Stack Developer with 15+ years in business development and client strategy.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a href="#projects" class="px-6 py-2 bg-black text-white rounded hover:bg-gray-800">View Projects</a>
-          <a href="Matt Roshay - Full-Stack General CV.pdf" download class="px-6 py-2 border border-gray-800 rounded hover:bg-gray-100">Download Resume</a>
-        </div>
+  <header class="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 py-24 max-w-6xl mx-auto">
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <h1 class="text-4xl font-bold mb-4">Matt Roshay</h1>
+      <p class="text-lg mb-6">Full-Stack Developer with 15+ years in business development and client strategy.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#projects" class="px-6 py-2 bg-black text-white rounded hover:bg-gray-800">View Projects</a>
+        <a href="resume.pdf" download="Matt Roshay - Full-Stack General CV.pdf" class="px-6 py-2 border border-gray-800 rounded hover:bg-gray-100">Download Resume</a>
       </div>
-      <div class="md:w-1/2 flex justify-center">
-        <img src="IMG_1489.jpeg" alt="Matt Roshay" class="w-48 h-48 object-cover rounded-full grayscale-img shadow-md" />
-      </div>
-    </header>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <img src="/images/profile.jpeg" alt="Matt Roshay" class="w-48 h-48 object-cover rounded-full grayscale-img shadow-md" />
+    </div>
+  </header>
 
-    <section id="about" class="px-6 py-16 max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
-      <p class="text-gray-700 mb-4">
-        I’m a full-stack developer with a strong foundation in Ruby on Rails, React.js, and modern web technologies,
-        following a 15+ year career in business development and client relationship management.
-      </p>
-      <p class="text-gray-700 mb-4">
-        I build responsive, user-focused applications like MatchMeal (AI recipe tool) and a CMS-style portfolio/blog
-        platform. I'm experienced in Agile workflows, API integrations, and tools like Cloudinary and PostgreSQL.
-      </p>
-      <p class="text-gray-700">
-        Passionate about creating inclusive digital experiences and solving real-world problems through technology.
-      </p>
-    </section>
 
-    <section id="projects" class="px-6 py-16 bg-gray-50">
-      <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+  <section id="about" class="px-6 py-16 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+    <p class="text-gray-700 mb-4">
+      I’m a full-stack developer with a strong foundation in Ruby on Rails, React.js, and modern web technologies,
+      following a 15+ year career in business development and client relationship management.
+    </p>
+    <p class="text-gray-700 mb-4">
+      I build responsive, user-focused applications like MatchMeal (AI recipe tool) and a CMS-style portfolio/blog
+      platform. I'm experienced in Agile workflows, API integrations, and tools like Cloudinary and PostgreSQL.
+    </p>
+    <p class="text-gray-700">
+      Passionate about creating inclusive digital experiences and solving real-world problems through technology.
+    </p>
+  </section>
 
-        <div class="bg-white shadow rounded-xl p-6">
-          <h3 class="text-xl font-semibold mb-2">MatchMeal</h3>
-          <p class="text-gray-700 mb-2">
-            A web/mobile app that helps users find recipes based on what's already in their kitchen.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">Rails · OpenAI · PWA · PostgreSQL</p>
+
+  <section id="projects" class="px-6 py-16 bg-gray-50">
+    <h2 class="text-3xl font-semibold text-center mb-12">Projects</h2>
+    <div class="space-y-8 max-w-5xl mx-auto">
+
+
+      <div class="flex items-start gap-6 bg-white p-6 shadow rounded-xl">
+        <img src="/images/matchmeal.png" alt="MatchMeal logo" class="w-20 h-20 object-contain grayscale-img">
+        <div>
+          <h3 class="text-xl font-semibold mb-1">MatchMeal</h3>
+          <p class="text-gray-700 mb-1">A web/mobile app that helps users find recipes based on what’s already in their kitchen.</p>
+          <p class="text-sm text-gray-500 mb-2">Rails · OpenAI · PWA · PostgreSQL</p>
           <a href="https://www.matchmeal.eu" class="text-black hover:underline">Live</a> ·
           <a href="https://github.com/roshaym/matchmeal" class="text-black hover:underline">GitHub</a>
         </div>
+      </div>
 
-        <div class="bg-white shadow rounded-xl p-6">
-          <h3 class="text-xl font-semibold mb-2">b-itconsulting</h3>
-          <p class="text-gray-700 mb-2">
-            Custom-built portfolio and CMS platform for a senior IT infrastructure consultant.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">Rails · Cloudinary · SCSS · Blog Editor</p>
+
+      <div class="flex items-start gap-6 bg-white p-6 shadow rounded-xl">
+        <img src="/images/generic_project.png" alt="Generic project" class="w-20 h-20 object-contain grayscale-img">
+        <div>
+          <h3 class="text-xl font-semibold mb-1">Portfolio & Blog Platform</h3>
+          <p class="text-gray-700 mb-1">Responsive portfolio and blog platform built for an IT infrastructure professional.</p>
+          <p class="text-sm text-gray-500 mb-2">Rails · Cloudinary · SCSS · Blog Editor</p>
         </div>
+      </div>
 
-        <div class="bg-white shadow rounded-xl p-6 md:col-span-2">
-          <h3 class="text-xl font-semibold mb-2">FlatRent</h3>
-          <p class="text-gray-700 mb-2">
-            An Airbnb-style clone built with a team using Rails and JavaScript.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">Rails · JS · PostgreSQL · Devise</p>
+
+      <div class="flex items-start gap-6 bg-white p-6 shadow rounded-xl">
+        <img src="/images/flatrent.png" alt="FlatRent logo" class="w-20 h-20 object-contain grayscale-img">
+        <div>
+          <h3 class="text-xl font-semibold mb-1">FlatRent</h3>
+          <p class="text-gray-700 mb-1">An Airbnb-style clone built with a team using Rails and JavaScript.</p>
+          <p class="text-sm text-gray-500 mb-2">Rails · JS · PostgreSQL · Devise</p>
           <a href="https://airbnb-roshaym-5f0f5ed33d88.herokuapp.com" class="text-black hover:underline">Live</a>
         </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="px-6 py-16 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Get In Touch</h2>
-      <p class="text-gray-700 mb-6">Available for freelance and full-time opportunities.</p>
-      <p class="text-gray-700 mb-4">
-        📬 <a href="mailto:roshaym@gmail.com" class="underline">roshaym@gmail.com</a>
-      </p>
-      <div class="flex justify-center gap-6 mt-4">
-        <a href="https://github.com/roshaym" class="text-black hover:underline">GitHub</a>
-        <a href="https://www.linkedin.com/in/mattroshay/" class="text-black hover:underline">LinkedIn</a>
-      </div>
-    </section>
 
-    <footer class="text-center text-gray-500 text-sm py-6 border-t mt-12">
-      © 2025 Matt Roshay — Built with HTML & Tailwind CSS
-    </footer>
+  <section id="contact" class="px-6 py-16 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Get In Touch</h2>
+    <p class="text-gray-700 mb-6">Available for freelance and full-time opportunities.</p>
+    <p class="text-gray-700 mb-4">
+      📬 <a href="mailto:roshaym@gmail.com" class="underline">roshaym@gmail.com</a>
+    </p>
+    <div class="flex justify-center gap-6 mt-4">
+      <a href="https://github.com/roshaym" class="text-black hover:underline">GitHub</a>
+      <a href="https://www.linkedin.com/in/mattroshay/" class="text-black hover:underline">LinkedIn</a>
+    </div>
+  </section>
 
-  </body>
+  <footer class="text-center text-gray-500 text-sm py-6 border-t mt-12">
+    © 2025 Matt Roshay — Built with HTML & Tailwind CSS
+  </footer>
+</body>
 </html>
